@@ -89,7 +89,7 @@ app.put('/image', (req, res) => {
         }
     })
     if (!found) {
-        res.status(404).json('no such user');
+        res.status(400).json('not found');
     }
 })
 
